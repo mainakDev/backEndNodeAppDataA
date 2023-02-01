@@ -1,0 +1,7 @@
+Copy the element of an array into another
+arr = ['a', 'b', 'c'];
+for(let i =0; i < 3; i++){
+    arr[i] = arr2[i];
+
+}
+arr3 = arr.slice();

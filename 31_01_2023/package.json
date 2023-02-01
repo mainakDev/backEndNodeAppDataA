@@ -1,0 +1,16 @@
+{
+  "name": "31_01_2023",
+  "version": "1.0.0",
+  "description": "31 JAN Class",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "author": "Data Sem 4A",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
