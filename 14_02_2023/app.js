@@ -1,22 +1,19 @@
 const express = require('express'); //import express
 
 const app = express();
- 
-//middleware1
-app.use('/',(req, res, next) => {
-    console.log('Inside Middleware function');
-    next();
+
+//addProduct middleware
+app.use('/addProduct',(req, res, next) => {
+    res.send('<form action="/" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>');
 });
 
-app.use('/addProduct',(req, res) => {
-    res.send('<h1>Add Product Page</h1>');
-});
-
-app.use('/products',(req, res) => {
+//products middleware
+app.use('/products',(req, res, next) => {
     res.send('<h1>Products Page</h1>');
 });
 
-app.use('/',(req, res) => {
+//homepage middleware
+app.use('/',(req, res, next) => {
     res.send('<h1>Hello from Express</h1>');
 });
 
