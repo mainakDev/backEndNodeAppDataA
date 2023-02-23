@@ -1,2 +1,2 @@
-routing in express, creating a add product page
+ routing in express, creating a add product page
 Next topic: Parsing our response
